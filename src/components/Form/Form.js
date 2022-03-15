@@ -48,7 +48,7 @@ function Form() {
 
 
         // input fields validation and responding with error message if invalid and not submitting the form.
-        if (firstname.trim() == '') {
+        if (firstname.trim() === '') {
             setfnisvalid(false);
             fnvalid = false;
             valid = false;
@@ -56,7 +56,7 @@ function Form() {
         if (fnvalid) setfnisvalid(true);
 
 
-        if (lastName.trim() == '') {
+        if (lastName.trim() === '') {
             setlnisvalid(false);
             lnvalid = false;
             valid = false;
@@ -64,21 +64,21 @@ function Form() {
         if (lnvalid) setlnisvalid(true);
 
 
-        if (email.trim() == '') {
+        if (email.trim() === '') {
             setemailisvalid(false);
             emailvalid = false;
             valid = false;
         }
         if (emailvalid) setemailisvalid(true);
 
-        if (dob == '') {
+        if (dob === '') {
             setdobisvalid(false);
             dobvalid = false;
             valid = false;
         }
         if (dobvalid) setdobisvalid(true);
 
-        if (bio.trim() == '') {
+        if (bio.trim() === '') {
             setbioisvalid(false);
             biovalid = false;
             valid = false;

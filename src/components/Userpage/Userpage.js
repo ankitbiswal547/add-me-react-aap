@@ -18,7 +18,7 @@ const Userpage = () => {
 
     // if no users, then show a message that there are no users currently.
     let isUser = true;
-    if (allUsers.length == 0) {
+    if (allUsers.length === 0) {
         isUser = false;
     }
 
