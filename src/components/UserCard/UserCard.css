@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+.user-card {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 0.25em;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Space Mono', monospace;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.user-name {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.dob-email-section {
+    color: grey;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    color: blueviolet;
+}

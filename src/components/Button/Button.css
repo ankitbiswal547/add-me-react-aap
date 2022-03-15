@@ -1,0 +1,13 @@
+  .btn {
+    background: blueviolet;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.1em;
+    letter-spacing: 0.06em;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Space Mono', monospace;
+    min-height: 40px;
+    width: 100%;
+    font-size: 1.2em;
+  }

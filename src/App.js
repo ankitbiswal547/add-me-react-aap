@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Form from './components/Form/Form';
+import Homepage from './components/Homepage/Homepage';
+import Userpage from './components/Userpage/Userpage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-page'>
+      <Switch>
+
+        {/* route for homepage */}
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+
+        {/* route for all users page */}
+        <Route path="/users" exact>
+          <Userpage />
+        </Route>
+
+        {/* route for adding new user page */}
+        <Route path="/adduser" exact>
+          <Form />
+        </Route>
+
+        {/* handling page not found error and redirecting user to home page only. */}
+        {/* <Route path='*' exact >
+          <Redirect to="/" />
+        </Route> */}
+
+      </Switch>
     </div>
   );
 }
